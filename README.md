@@ -2,11 +2,10 @@
 
 <img src="https://media.giphy.com/media/l4Jz19hgVBnCCM8uY/giphy.gif" width="500px">
 
-The goal of this lab is to buid a calculator that adds, subtracts, multiplies, and divides - without using the existing eval() function.
+The goal of this lab is to build a calculator that adds, subtracts, multiplies, and divides - without using the existing eval() function.
 
 ### Jumping off Point
-- Fork and clone the WDI_56 repo
-- Navigate to the work/02_week/calculator_lab directory
+- Fork and clone the http://github.com/katiegoines/calculator_lab repo
 - Work with the files structure provided 
 - Note, the below is not an exhaustive list 
 
