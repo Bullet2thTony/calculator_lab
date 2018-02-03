@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My first calculator</title>
+    <link rel="stylesheet" type='text.css' href="style.css" />
+</head>
+<style>
+* {
+    padding: 0px;
+    margin: 0px;
+}
+html {
+     background-color: lightblue;
+    
+}
+hr {
+    height: 2px;
+    background-color: grey;
+}
+h1 {
+    text-align: center;
+    background: #e87d0c;
+    height: 50px;
+    font-size: 50px;
+    padding: 35px;
+}
+#container {
+        position: relative;
+        width: 300px;
+        border: 3px solid grey;
+        margin: 30px auto;
+        border-radius: 5px;
+        background-color: lightgray;
+}
+input[type =text] {
+        position: relative;
+        display: block;
+        width: 90%;
+        margin: 12px auto 0px auto;
+        font-size: 20px;
+        /* border: 1px solid black; */
+        background-color: black;
+        color: white;
+}
+input[type=button] {
+        position: relative;
+        background-color: lightgoldenrodyellow;
+        width: 20%;
+        margin: 2%;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 10%;
+}
+input[type=button]:hover {
+    background-color: darkgray;
+}
+</style>
+<body>
+    <h1> Basic Calculator</h1>
+    <hr/><br/>
+
+    <div id="container">
+        <form name="calc">
+            <input type = 'text' name="output" placeholder="0" />
+            <br/>
+
+                <input type = 'button' value=' 1 ' onclick="document.calc.output.value+='1'" />
+                <input type = 'button' value=' 2 ' onclick="document.calc.output.value+='2'"/>
+                <input type = 'button' value=' 3 ' onclick="document.calc.output.value+='3'"/>
+                <input type = 'button' value=' / 'onclick="document.calc.output.value+='/'"/>
+            <br/>
+
+                <input type = 'button' value=' 4 ' onclick="document.calc.output.value+='4'"/>
+                <input type = 'button' value=' 5 ' onclick="document.calc.output.value+='5'"/>
+                <input type = 'button' value=' 6 ' onclick="document.calc.output.value+='6'"/>
+                <input type = 'button' value=' X ' onclick="document.calc.output.value+='*'"/>
+            <br/>
+
+                <input type = 'button' value=' 7 ' onclick="document.calc.output.value += '7'"/>
+                <input type = 'button' value=' 8 ' onclick="document.calc.output.value += '8'"/>
+                <input type = 'button' value=' 9 ' onclick="document.calc.output.value += '9'"/>
+                <input type = 'button' value=' - ' onclick="document.calc.output.value += '-'"/>
+            <br/>
+
+                <input type = 'button' value=' ( ' onclick="document.calc.output.value += '('"/>
+                <input type = 'button' value=' ) ' onclick="document.calc.output.value += ')'"/>
+                <input type = 'button' value=' 0 ' onclick="document.calc.output.value += '0'"/>
+                <input type = 'button' value=' + ' onclick="document.calc.output.value += '+'"/>
+            <br/>
+
+                <input type = 'button' value=' c ' onclick="document.calc.output.value=''"/>
+                <input type = 'button' value=' . ' onclick="document.calc.output.value+='.'"/>
+                <input type = 'button' value=' = ' onclick="document.calc.output.value =eval(document.calc.output.value)"/>
+                <input type = 'button' value=' % ' onclick="document.calc.output.value+='%'"/>
+            <br/>
+
+        </form>
+</div>
+
+    <br/><hr/>
+    <script>
+            
+    </script>
+</body>
+</html>
